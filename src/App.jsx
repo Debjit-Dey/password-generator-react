@@ -1,83 +1,78 @@
 import { useState } from "react";
 import Pass from './Pass.jsx';
 
-
-
-
 function App() {
-  const [color, setcolor] = useState("olive");
+  const [color, setColor] = useState("olive");
 
   return (
     <>
       <div
-        className="w-full h-screen duration-200 flex flex-col items-center"  
+        className="w-full h-screen flex flex-col items-center duration-200"  
         style={{ backgroundColor: color }}
       >
-        <div className="mt-28">
-        <Pass/>
+        <div className="mt-8 md:mt-16 lg:mt-20"> {/* Responsive margin from the top */}
+          <Pass/>
         </div>
         <div 
-        className="fixed flex flex-wrap justify-center bottom-16 inset-x-0 px-2">
-          
-          <div className="fixed flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl">
+          className="fixed flex flex-wrap justify-center bottom-16 inset-x-0 px-2"
+        >
+          <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl">
             <button
-              onClick={() => setcolor("red")}
-              className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+              onClick={() => setColor("red")}
+              className="outline-none px-3 py-1 rounded-full text-white shadow-lg"
               style={{ backgroundColor: "red" }}
             >
               Red
             </button>
             <button
-              onClick={() => setcolor("green")}
-              className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+              onClick={() => setColor("green")}
+              className="outline-none px-3 py-1 rounded-full text-white shadow-lg"
               style={{ backgroundColor: "green" }}
             >
-              green
+              Green
             </button>
             <button
-              onClick={() => setcolor("yellow")}
-              className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+              onClick={() => setColor("yellow")}
+              className="outline-none px-3 py-1 rounded-full text-white shadow-lg"
               style={{ backgroundColor: "yellow" }}
             >
-              yellow
+              Yellow
             </button>
             <button
-              onClick={() => setcolor("orange")}
-              className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+              onClick={() => setColor("orange")}
+              className="outline-none px-3 py-1 rounded-full text-white shadow-lg"
               style={{ backgroundColor: "orange" }}
             >
-              orange
+              Orange
             </button>
             <button
-              onClick={() => setcolor("blue")}
-              className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+              onClick={() => setColor("blue")}
+              className="outline-none px-3 py-1 rounded-full text-white shadow-lg"
               style={{ backgroundColor: "blue" }}
             >
-              blue
+              Blue
             </button>
             <button
-              onClick={() => setcolor("black")}
-              className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+              onClick={() => setColor("black")}
+              className="outline-none px-3 py-1 rounded-full text-white shadow-lg"
               style={{ backgroundColor: "black" }}
             >
-              black
+              Black
             </button>
             <button
-              onClick={() => setcolor("pink")}
-              className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+              onClick={() => setColor("pink")}
+              className="outline-none px-3 py-1 rounded-full text-white shadow-lg"
               style={{ backgroundColor: "pink" }}
             >
-              pink
+              Pink
             </button>
             <button
-              onClick={() => setcolor("grey")}
-              className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+              onClick={() => setColor("grey")}
+              className="outline-none px-3 py-1 rounded-full text-white shadow-lg"
               style={{ backgroundColor: "grey" }}
             >
-              grey
+              Grey
             </button>
-            
-            
           </div>
         </div>
       </div>
